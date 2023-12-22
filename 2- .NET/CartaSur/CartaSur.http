@@ -1,0 +1,6 @@
+@CartaSur_HostAddress = http://localhost:5195
+
+GET {{CartaSur_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Listado de empleados</title>
+</head>
+
+<body>
+    <main>
+        <div class="formulario-nuevo-empleado">
+            <form id="formulario-empleado">
+                <label for="nombre">Nombre empleado</label>
+                <input type="text" name="nombre" id="nombre" required>
+                <select name="status-empleado" id="status-empleado">
+                    <option value="activo">Activo</option>
+                    <option value="inactivo">Inactivo</option>
+                </select>
+                <button type="submit">Agregar</button>
+            </form>
+        </div>
+        <div class="container-listados">
+            <section class="listado-todos-empleados">
+                <label>Listado de empleados</label>
+                <div class="box">
+                    <ul id="listado-empleados-todos">
+                    </ul>
+                </div>
+            </section>
+            <section class="listado-empleados-status">
+                <div>
+                    <label>Listado de empleados activos</label>
+                    <div class="box">
+                        <ul id="listado-empleados-activos">
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <label>Listado de empleados inactivos</label>
+                    <div class="box">
+                        <ul id="listado-empleados-inactivos">
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="status"></div>
+    </main>
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
